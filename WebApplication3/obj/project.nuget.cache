@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rN7/JyXgTo0V88t2ibhLZDNuo7OFvTLXC0+HYyC1iUSfNJ6sEmNB8mLdDNqUXGdyxPQYqFDoHZI9+Pc9c7bw+g==",
+  "success": true,
+  "projectFilePath": "/home/warel/RiderProjects/WebApplication3/WebApplication3/WebApplication3.csproj",
+  "expectedPackageFiles": [
+    "/home/warel/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.0/microsoft.aspnetcore.app.ref.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
