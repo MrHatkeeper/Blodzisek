@@ -1,20 +1,36 @@
-@model System.Collections.Generic.List<WebApplication3.Controllers.OnePost>
+@using WebApplication3.Controllers
+@model WebApplication3.Controllers.MyController
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "blog";
     Layout = "_Layout";
+    Posts posts = new Posts();
 }
 
 <h1>Blog</h1>
 
-<div>
+<div runat="server">
     <h3>Header</h3>
-    <input/>
+    <input type="text" id="header" name="header"/>
     <h4>Body</h4>
-    <input/>
-    <button>Create new post</button>
+    <input type="text" id="body" name="body"/>
+    <button type="button" class="btn btn-primary" onclick="@{
+                                                               posts.AddPost("Pepa","josef" );
+                                                           }">Create new post</button>
 </div>
+<div>
+    <h1>posts</h1>
+    @{
+        foreach (var post in (ViewData["data"] as IList<OnePost>)!)
+        {
+            <div class="border-1">
+                <h2 class="fs-2">@post.PostHeader</h2>
+                <p class="postBody">@post.PostText</p>
+                <button type="button" class="btn btn-primary">Čti more</button>
+                <button type="button" class="btn btn-info">Uprav</button>
+                <button type="button" class="btn btn-danger">Smazat</button>
+            </div>
+        }
 
-@{
-    
-}
+    }
+</div>

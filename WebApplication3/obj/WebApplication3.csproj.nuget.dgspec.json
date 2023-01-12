@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/warel/RiderProjects/WebApplication3/WebApplication3/WebApplication3.csproj": {}
+    "C:\\Users\\krchk\\RiderProjects\\Blodzisek\\WebApplication3\\WebApplication3.csproj": {}
   },
   "projects": {
-    "/home/warel/RiderProjects/WebApplication3/WebApplication3/WebApplication3.csproj": {
+    "C:\\Users\\krchk\\RiderProjects\\Blodzisek\\WebApplication3\\WebApplication3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/warel/RiderProjects/WebApplication3/WebApplication3/WebApplication3.csproj",
+        "projectUniqueName": "C:\\Users\\krchk\\RiderProjects\\Blodzisek\\WebApplication3\\WebApplication3.csproj",
         "projectName": "WebApplication3",
-        "projectPath": "/home/warel/RiderProjects/WebApplication3/WebApplication3/WebApplication3.csproj",
-        "packagesPath": "/home/warel/.nuget/packages/",
-        "outputPath": "/home/warel/RiderProjects/WebApplication3/WebApplication3/obj/",
+        "projectPath": "C:\\Users\\krchk\\RiderProjects\\Blodzisek\\WebApplication3\\WebApplication3.csproj",
+        "packagesPath": "C:\\Users\\krchk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\krchk\\RiderProjects\\Blodzisek\\WebApplication3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/warel/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\krchk\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -48,12 +48,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.0, 7.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -62,7 +56,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

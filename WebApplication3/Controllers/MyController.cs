@@ -9,8 +9,17 @@ public class MyController : Controller
     public IActionResult Home()
     {
         Posts posts = new Posts();
-        List<OnePost> data = posts.ManagePosts();
-        ViewData["posts"] = data;
-        return View(data);
+        List<OnePost> data = posts.ReadPosts();
+        ViewData["posts"] = posts;
+        ViewData["data"] = data;
+        return View();
     }
+
+    [HttpPost]
+    public IActionResult AddPost(string header, string body)
+    {
+        ViewBag.
+        return View();
+    }
+    
 }
