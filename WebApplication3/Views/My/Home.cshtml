@@ -9,14 +9,14 @@
 
 <h1>Blog</h1>
 
-<div runat="server">
-    <h3>Header</h3>
-    <input type="text" id="header" name="header"/>
-    <h4>Body</h4>
-    <input type="text" id="body" name="body"/>
-    <button type="button" class="btn btn-primary" onclick="@{
-                                                               posts.AddPost("Pepa","josef" );
-                                                           }">Create new post</button>
+<div>
+    <form asp-controller="My" asp-action="AddPost">
+        <h3>Header</h3>
+        <input type="text" id="header" name="header"/>
+        <h4>Body</h4>
+        <input type="text" id="body" name="body"/>
+        <input type="submit" class="btn btn-primary" value="Submit"/>
+    </form>
 </div>
 <div>
     <h1>posts</h1>
@@ -28,9 +28,10 @@
                 <p class="postBody">@post.PostText</p>
                 <button type="button" class="btn btn-primary">Čti more</button>
                 <button type="button" class="btn btn-info">Uprav</button>
-                <button type="button" class="btn btn-danger">Smazat</button>
+                <form asp-action="Remove" asp-controller="My">
+                    <input type="submit" class="btn btn-danger" value="Delete"/>
+                </form>
             </div>
         }
-
     }
 </div>
